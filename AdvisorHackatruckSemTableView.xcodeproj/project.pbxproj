@@ -14,6 +14,7 @@
 		3F44F51D22CE7A7000ABC728 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F44F51B22CE7A7000ABC728 /* LaunchScreen.storyboard */; };
 		3F44F52822CE7A7100ABC728 /* AdvisorHackatruckSemTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F44F52722CE7A7100ABC728 /* AdvisorHackatruckSemTableViewTests.swift */; };
 		3F44F53322CE7A7100ABC728 /* AdvisorHackatruckSemTableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F44F53222CE7A7100ABC728 /* AdvisorHackatruckSemTableViewUITests.swift */; };
+		3FB7487022CFCDF700CF63F8 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB7486F22CFCDF700CF63F8 /* SettingsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		3F44F52E22CE7A7100ABC728 /* AdvisorHackatruckSemTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AdvisorHackatruckSemTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F44F53222CE7A7100ABC728 /* AdvisorHackatruckSemTableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvisorHackatruckSemTableViewUITests.swift; sourceTree = "<group>"; };
 		3F44F53422CE7A7100ABC728 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FB7486F22CFCDF700CF63F8 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				3F44F51222CE7A7000ABC728 /* AppDelegate.swift */,
 				3F44F51422CE7A7000ABC728 /* ViewController.swift */,
 				3F44F51622CE7A7000ABC728 /* Main.storyboard */,
+				3FB7486F22CFCDF700CF63F8 /* SettingsVC.swift */,
 				3F44F51922CE7A7000ABC728 /* Assets.xcassets */,
 				3F44F51B22CE7A7000ABC728 /* LaunchScreen.storyboard */,
 				3F44F51E22CE7A7000ABC728 /* Info.plist */,
@@ -261,6 +264,7 @@
 			files = (
 				3F44F51522CE7A7000ABC728 /* ViewController.swift in Sources */,
 				3F44F51322CE7A7000ABC728 /* AppDelegate.swift in Sources */,
+				3FB7487022CFCDF700CF63F8 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +511,7 @@
 				3F44F53922CE7A7100ABC728 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F44F53A22CE7A7100ABC728 /* Build configuration list for PBXNativeTarget "AdvisorHackatruckSemTableViewTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +520,7 @@
 				3F44F53C22CE7A7100ABC728 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F44F53D22CE7A7100ABC728 /* Build configuration list for PBXNativeTarget "AdvisorHackatruckSemTableViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +529,7 @@
 				3F44F53F22CE7A7100ABC728 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
