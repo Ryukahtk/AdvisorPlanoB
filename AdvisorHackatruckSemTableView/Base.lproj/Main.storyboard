@@ -25,6 +25,13 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Free-Printable-June-2019-Calendar" translatesAutoresizingMaskIntoConstraints="NO" id="fBM-36-fsD">
                                 <rect key="frame" x="16" y="181" width="343" height="304"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="otp-OX-UuJ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Calendário" id="DMp-ov-Q7N"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -34,12 +41,13 @@
                             <constraint firstItem="fBM-36-fsD" firstAttribute="leading" secondItem="UyR-8v-0wx" secondAttribute="leadingMargin" id="kJg-nq-S3a"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="3zf-rw-Exf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S7T-4o-j8m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1183.2" y="115.59220389805098"/>
+            <point key="canvasLocation" x="2761" y="-493"/>
         </scene>
-        <!--View Controller-->
+        <!--TELA PRINCIPAL-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdvisorHackatruckSemTableView" customModuleProvider="target" sceneMemberID="viewController">
@@ -57,21 +65,21 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jI-2m-DGG">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
                                         <color key="backgroundColor" red="0.37640172240000003" green="0.37634837630000001" blue="0.38458287720000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Calculo">
+                                        <state key="normal" title="Cálculo">
                                             <color key="titleColor" red="0.99607473611831665" green="0.99220293760299683" blue="0.99199241399765015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="2Jg-xQ-dQD" kind="show" id="DMu-YD-eP2"/>
+                                            <segue destination="MNn-Kv-Y2X" kind="show" id="Q4d-f5-fAK"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ky1-kh-c2S">
                                         <rect key="frame" x="0.0" y="34" width="375" height="30"/>
                                         <color key="backgroundColor" red="0.37640172240000003" green="0.37634837630000001" blue="0.38458287720000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Fisica">
+                                        <state key="normal" title="Física">
                                             <color key="titleColor" red="0.99607473611831665" green="0.99220293760299683" blue="0.99199241399765015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="5aF-SS-6Bv" kind="show" id="hcQ-GB-eFX"/>
+                                            <segue destination="E79-MI-mnG" kind="show" id="4WX-xy-vUj"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OFs-l5-4Lz">
@@ -105,14 +113,15 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="1"/>
                             </stackView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WhatsApp Image 2019-07-04 at 20.24.09" translatesAutoresizingMaskIntoConstraints="NO" id="8a3-47-RNn">
-                                <rect key="frame" x="16" y="-76" width="343" height="469"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="WhatsApp Image 2019-07-04 at 20.24.09" translatesAutoresizingMaskIntoConstraints="NO" id="8a3-47-RNn">
+                                <rect key="frame" x="16" y="72" width="343" height="421"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EW0-I6-0QR">
-                                <rect key="frame" x="286" y="463" width="89" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EW0-I6-0QR">
+                                <rect key="frame" x="246" y="434" width="106" height="49"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Calendario">
+                                <state key="normal" title="Calendário">
                                     <color key="titleColor" red="0.99607473611831665" green="0.99220293760299683" blue="0.99199241399765015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -123,10 +132,12 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Uut-ai-3eG" firstAttribute="top" secondItem="EW0-I6-0QR" secondAttribute="bottom" constant="8" id="AJT-Ta-k9c"/>
+                            <constraint firstAttribute="trailing" secondItem="Uut-ai-3eG" secondAttribute="trailing" constant="9" id="Aed-Be-KkG"/>
                             <constraint firstItem="8a3-47-RNn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Aew-oi-YOM"/>
                             <constraint firstItem="Uut-ai-3eG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DX7-88-iXj"/>
                             <constraint firstItem="EW0-I6-0QR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="286" id="Ej1-pb-Uuy"/>
                             <constraint firstItem="8a3-47-RNn" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Pwd-9Q-XWM"/>
+                            <constraint firstAttribute="trailing" secondItem="Uut-ai-3eG" secondAttribute="trailing" id="Ws6-Y8-IRP"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Uut-ai-3eG" secondAttribute="bottom" id="imK-BH-g7w"/>
                             <constraint firstItem="Uut-ai-3eG" firstAttribute="top" secondItem="8a3-47-RNn" secondAttribute="bottom" constant="108" id="jgE-QF-PvB"/>
                             <constraint firstAttribute="trailing" secondItem="EW0-I6-0QR" secondAttribute="trailing" id="jif-8H-ZG1"/>
@@ -134,7 +145,7 @@
                             <constraint firstAttribute="trailing" secondItem="Uut-ai-3eG" secondAttribute="trailing" id="mZq-8m-rJn"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="K4X-nb-Qi2"/>
+                    <navigationItem key="navigationItem" title="TELA PRINCIPAL" id="K4X-nb-Qi2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -152,136 +163,81 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6BH-Tr-W2K">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="6BH-Tr-W2K">
                                 <rect key="frame" x="43" y="127" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i9V-j3-K3q">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="i9V-j3-K3q">
                                 <rect key="frame" x="142" y="127" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wFf-rr-ZiZ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="wFf-rr-ZiZ">
                                 <rect key="frame" x="241" y="127" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="skj-HZ-4aJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="skj-HZ-4aJ">
                                 <rect key="frame" x="43" y="211" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Lb-8g-Met">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="1Lb-8g-Met">
                                 <rect key="frame" x="142" y="211" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KMV-q7-oeL">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="KMV-q7-oeL">
                                 <rect key="frame" x="241" y="211" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UOa-rm-IdV">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="UOa-rm-IdV">
                                 <rect key="frame" x="43" y="295" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pxu-FO-603">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="Pxu-FO-603">
                                 <rect key="frame" x="142" y="295" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="32K-m7-Ebc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="32K-m7-Ebc">
                                 <rect key="frame" x="241" y="295" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sbV-bf-zpQ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="sbV-bf-zpQ">
                                 <rect key="frame" x="43" y="379" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q8j-uA-pPx">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="q8j-uA-pPx">
                                 <rect key="frame" x="142" y="379" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FZc-BQ-37b">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="FZc-BQ-37b">
                                 <rect key="frame" x="241" y="379" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iig-P3-ENV">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="Iig-P3-ENV">
                                 <rect key="frame" x="43" y="463" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fiq-bY-l0x">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="fiq-bY-l0x">
                                 <rect key="frame" x="142" y="463" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w4e-Ci-GTI">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="w4e-Ci-GTI">
                                 <rect key="frame" x="241" y="463" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="729-tk-DKW">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Documentos Física" id="U4Y-lr-1mJ"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="zzl-9n-d6z"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gVy-4I-mUQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3532" y="3036"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="D6O-Rp-QpN">
-            <objects>
-                <viewController id="2Jg-xQ-dQD" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="0A9-DS-yrV"/>
-                        <viewControllerLayoutGuide type="bottom" id="NNw-pL-PXn"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="tJV-NX-ECu">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ZUd-24-SOJ">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bI-Rl-JgH">
-                                        <rect key="frame" x="0.0" y="286.5" width="122.5" height="30"/>
-                                        <color key="backgroundColor" red="0.37640172240000003" green="0.37634837630000001" blue="0.38458287720000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Fotos">
-                                            <color key="titleColor" red="0.99607473611831665" green="0.99220293760299683" blue="0.99199241399765015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="titleShadowColor" red="0.99607473611831665" green="0.99220293760299683" blue="0.99199241399765015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="j1x-qb-qJb" kind="show" id="UdO-FL-VIx"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWH-IW-fYu">
-                                        <rect key="frame" x="126.5" y="286.5" width="122" height="30"/>
-                                        <color key="backgroundColor" red="0.37640172240000003" green="0.37634837630000001" blue="0.38458287720000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Videos">
-                                            <color key="titleColor" red="0.99607473611831665" green="0.99220293760299683" blue="0.99199241399765015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="07u-Jt-hDd" kind="show" id="VqG-jf-KTC"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLG-F9-NXs">
-                                        <rect key="frame" x="252.5" y="286.5" width="122.5" height="30"/>
-                                        <color key="backgroundColor" red="0.37640172240000003" green="0.37634837630000001" blue="0.38458287720000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Documentos">
-                                            <color key="titleColor" red="0.99607473611831665" green="0.99220293760299683" blue="0.99199241399765015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="m4I-Uq-DuY" kind="show" id="a4U-x5-bpo"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="ZUd-24-SOJ" secondAttribute="trailing" id="Abb-1w-rUz"/>
-                            <constraint firstItem="ZUd-24-SOJ" firstAttribute="leading" secondItem="tJV-NX-ECu" secondAttribute="leading" id="RV3-He-8GE"/>
-                            <constraint firstItem="NNw-pL-PXn" firstAttribute="top" secondItem="ZUd-24-SOJ" secondAttribute="bottom" id="U5K-Qs-iKt"/>
-                            <constraint firstItem="ZUd-24-SOJ" firstAttribute="top" secondItem="0A9-DS-yrV" secondAttribute="bottom" id="vO8-Gr-tAx"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="9DD-rq-wta"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sOg-xS-TGO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3534" y="3789"/>
+            <point key="canvasLocation" x="4329" y="3313"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="sTx-LK-k40">
@@ -295,25 +251,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1T6-ZW-mak">
-                                <rect key="frame" x="67" y="96" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo-1103594_960_720" translatesAutoresizingMaskIntoConstraints="NO" id="K4D-ug-vcJ">
+                                <rect key="frame" x="108" y="298" width="136" height="122"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K4D-ug-vcJ">
-                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo-1103594_960_720" translatesAutoresizingMaskIntoConstraints="NO" id="bfY-Wx-VAF">
+                                <rect key="frame" x="108" y="459" width="136" height="119"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bfY-Wx-VAF">
-                                <rect key="frame" x="67" y="443" width="240" height="128"/>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mr7-Lm-W6b">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Fotos Cálculo" id="hT1-UG-7XB"/>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo-1103594_960_720" translatesAutoresizingMaskIntoConstraints="NO" id="1T6-ZW-mak">
+                                <rect key="frame" x="108" y="155" width="136" height="113"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Dsj-0F-erA"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KRa-q4-EJB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4847" y="3788"/>
+            <point key="canvasLocation" x="521" y="3313"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Lod-nP-gug">
@@ -327,21 +291,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L2Q-aC-0Vu">
-                                <rect key="frame" x="67" y="146" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iconevideo1" translatesAutoresizingMaskIntoConstraints="NO" id="L2Q-aC-0Vu">
+                                <rect key="frame" x="39" y="122" width="137" height="122"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ls3-ph-HtP">
-                                <rect key="frame" x="67" y="393" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iconevideo1" translatesAutoresizingMaskIntoConstraints="NO" id="ls3-ph-HtP">
+                                <rect key="frame" x="202" y="125" width="137" height="119"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="re7-XJ-CEJ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Videos Cálculo" id="1Fr-zk-PlF"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="tNi-fg-fqE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2NY-ul-0Y8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4846" y="4497"/>
+            <point key="canvasLocation" x="1364" y="3313"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="EgB-6n-XYi">
@@ -355,73 +327,81 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7XR-FA-r7U">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="7XR-FA-r7U">
                                 <rect key="frame" x="43" y="127" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cPX-bK-Die">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="cPX-bK-Die">
                                 <rect key="frame" x="142" y="127" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ciI-OG-kZF">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="ciI-OG-kZF">
                                 <rect key="frame" x="241" y="127" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2FE-rB-lwW">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="2FE-rB-lwW">
                                 <rect key="frame" x="43" y="211" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dit-W5-g2Z">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="Dit-W5-g2Z">
                                 <rect key="frame" x="142" y="211" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dfU-4h-sqH">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="dfU-4h-sqH">
                                 <rect key="frame" x="241" y="211" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hUT-Yq-njr">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="hUT-Yq-njr">
                                 <rect key="frame" x="43" y="295" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hgs-oH-zJN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="Hgs-oH-zJN">
                                 <rect key="frame" x="142" y="295" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nR8-ex-DvB">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="nR8-ex-DvB">
                                 <rect key="frame" x="241" y="295" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PPW-ZM-aoZ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="PPW-ZM-aoZ">
                                 <rect key="frame" x="43" y="379" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Kg-qJ-jmR">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="9Kg-qJ-jmR">
                                 <rect key="frame" x="142" y="379" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ELg-8O-29n">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="ELg-8O-29n">
                                 <rect key="frame" x="241" y="379" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EVd-cw-Jum">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="EVd-cw-Jum">
                                 <rect key="frame" x="43" y="463" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4kR-Di-uRc">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="4kR-Di-uRc">
                                 <rect key="frame" x="142" y="463" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ivb-JA-Xer">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="ivb-JA-Xer">
                                 <rect key="frame" x="241" y="463" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4qr-Tz-rWg">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Documentos Cálculo" id="aK6-CL-Hwk"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="1mc-OP-UeB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AkJ-J0-4xT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4846" y="5237"/>
+            <point key="canvasLocation" x="2265" y="3314"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="S3E-fi-cUT">
@@ -464,70 +444,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ord-C1-OOR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2636" y="789.35532233883066"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="3io-zQ-VSe">
-            <objects>
-                <viewController id="5aF-SS-6Bv" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jJU-QN-3SU"/>
-                        <viewControllerLayoutGuide type="bottom" id="NSK-hL-qe9"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="E9b-6r-qY7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="vTu-xZ-eVc">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bp5-9F-pQf">
-                                        <rect key="frame" x="0.0" y="286.5" width="122.5" height="30"/>
-                                        <color key="backgroundColor" red="0.37640172240000003" green="0.37634837630000001" blue="0.38458287720000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Fotos">
-                                            <color key="titleColor" red="0.99607473611831665" green="0.99220293760299683" blue="0.99199241399765015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="titleShadowColor" red="0.99607473611831665" green="0.99220293760299683" blue="0.99199241399765015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="LbB-fR-sId" kind="show" id="KZh-l8-M1c"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DBs-Bv-kaY">
-                                        <rect key="frame" x="126.5" y="286.5" width="122" height="30"/>
-                                        <color key="backgroundColor" red="0.37640172240000003" green="0.37634837630000001" blue="0.38458287720000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Videos">
-                                            <color key="titleColor" red="0.99607473611831665" green="0.99220293760299683" blue="0.99199241399765015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="fIz-8k-tpF" kind="show" id="2PR-T0-MCl"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kgI-TZ-NP0">
-                                        <rect key="frame" x="252.5" y="286.5" width="122.5" height="30"/>
-                                        <color key="backgroundColor" red="0.37640172240000003" green="0.37634837630000001" blue="0.38458287720000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Documentos">
-                                            <color key="titleColor" red="0.99607473611831665" green="0.99220293760299683" blue="0.99199241399765015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="ueu-Vc-kbR" kind="show" id="OyQ-L4-m3R"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="vTu-xZ-eVc" secondAttribute="trailing" id="05H-SX-r6c"/>
-                            <constraint firstItem="vTu-xZ-eVc" firstAttribute="top" secondItem="jJU-QN-3SU" secondAttribute="bottom" id="4dJ-fO-6pB"/>
-                            <constraint firstItem="NSK-hL-qe9" firstAttribute="top" secondItem="vTu-xZ-eVc" secondAttribute="bottom" id="ScB-YD-LfY"/>
-                            <constraint firstItem="vTu-xZ-eVc" firstAttribute="leading" secondItem="E9b-6r-qY7" secondAttribute="leading" id="nEZ-CJ-iOD"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="YoY-8i-Drm"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wX5-g2-xi0" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2265" y="2033"/>
+            <point key="canvasLocation" x="1625" y="-493"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="3X4-vV-o9t">
@@ -541,25 +458,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vnv-2h-0Bx">
-                                <rect key="frame" x="67" y="96" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo-1103594_960_720" translatesAutoresizingMaskIntoConstraints="NO" id="vnv-2h-0Bx">
+                                <rect key="frame" x="67" y="138" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mtU-yn-k8t">
-                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo-1103594_960_720" translatesAutoresizingMaskIntoConstraints="NO" id="mtU-yn-k8t">
+                                <rect key="frame" x="67" y="311" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9hv-u0-KTg">
-                                <rect key="frame" x="67" y="443" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo-1103594_960_720" translatesAutoresizingMaskIntoConstraints="NO" id="9hv-u0-KTg">
+                                <rect key="frame" x="67" y="485" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eVb-hy-JuN">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Fotos Física" id="Bcd-2C-eah"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="kKP-p1-Sse"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XQe-vg-deD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3534" y="1622"/>
+            <point key="canvasLocation" x="4330" y="1776"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="qzQ-g8-smj">
@@ -573,54 +498,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4qA-vz-3TE">
-                                <rect key="frame" x="67" y="97" width="240" height="128"/>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sh4-hr-EKQ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Videos Física" id="wmI-IQ-F9S"/>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iconevideo1" translatesAutoresizingMaskIntoConstraints="NO" id="4qA-vz-3TE">
+                                <rect key="frame" x="67" y="156" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ybm-mG-9aM">
-                                <rect key="frame" x="67" y="344" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iconevideo1" translatesAutoresizingMaskIntoConstraints="NO" id="ybm-mG-9aM">
+                                <rect key="frame" x="67" y="403" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="wSH-FY-oj5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XPa-Rw-80t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3529" y="2326"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="kSC-Fz-sfX">
-            <objects>
-                <viewController id="6Ko-qj-T05" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="05l-wh-zKY"/>
-                        <viewControllerLayoutGuide type="bottom" id="uwh-jX-5lg"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kkS-bF-F9S">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XMh-8s-mSP">
-                                <rect key="frame" x="67" y="96" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1aI-WL-7F3">
-                                <rect key="frame" x="67" y="269" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wSu-I4-uVr">
-                                <rect key="frame" x="67" y="443" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="29K-ML-UtY"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FXg-Tg-8IQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5140" y="-1730.2848575712146"/>
+            <point key="canvasLocation" x="4329" y="2477"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="MsI-kW-NeP">
@@ -634,18 +534,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="s0j-sv-ztr">
-                                <rect key="frame" x="67" y="96" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo-1103594_960_720" translatesAutoresizingMaskIntoConstraints="NO" id="s0j-sv-ztr">
+                                <rect key="frame" x="67" y="142" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tiU-sC-N91">
-                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo-1103594_960_720" translatesAutoresizingMaskIntoConstraints="NO" id="tiU-sC-N91">
+                                <rect key="frame" x="67" y="315" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yIV-ci-456">
-                                <rect key="frame" x="67" y="443" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo-1103594_960_720" translatesAutoresizingMaskIntoConstraints="NO" id="yIV-ci-456">
+                                <rect key="frame" x="67" y="489" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sh8-0g-4rz">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Fotos Artes" id="oMh-jv-Ojc"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -653,7 +560,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kR3-dL-2xh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5140" y="-1730.2848575712146"/>
+            <point key="canvasLocation" x="4329" y="-1149"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Xj2-5q-R9m">
@@ -703,6 +610,13 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6I3-mO-sRw">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Artes" id="LrB-ng-7Ee"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -716,7 +630,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kVK-QR-v6S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2636" y="-1187.8560719640182"/>
+            <point key="canvasLocation" x="2761" y="278"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fEs-aO-j8a">
@@ -730,14 +644,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="INO-UP-cDt">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iconevideo1" translatesAutoresizingMaskIntoConstraints="NO" id="INO-UP-cDt">
                                 <rect key="frame" x="67" y="134" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zeM-pA-eNC">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iconevideo1" translatesAutoresizingMaskIntoConstraints="NO" id="zeM-pA-eNC">
                                 <rect key="frame" x="67" y="381" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="H4r-4d-vgF">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Videos Artes" id="EeH-JJ-n33"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -745,7 +666,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d0C-y8-NgN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5140" y="-994"/>
+            <point key="canvasLocation" x="4329" y="-413"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="26z-H8-rOP">
@@ -795,6 +716,13 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tJP-9G-xJx">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Swift" id="hpm-RV-5Ib"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -808,7 +736,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lu7-Rb-pZH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5738" y="790"/>
+            <point key="canvasLocation" x="5206" y="1137"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Zdm-Kc-Ozu">
@@ -822,17 +750,25 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KOu-Xt-7Yg">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iconevideo1" translatesAutoresizingMaskIntoConstraints="NO" id="KOu-Xt-7Yg">
                                 <rect key="frame" x="67" y="146" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EhL-0U-Pbh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iconevideo1" translatesAutoresizingMaskIntoConstraints="NO" id="EhL-0U-Pbh">
                                 <rect key="frame" x="67" y="393" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c6w-AZ-CR5">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Videos Swift" id="Wz9-ma-JBN"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="YVg-wF-Yyv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pRN-Tc-78O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -850,69 +786,77 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kIT-iQ-LCJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="kIT-iQ-LCJ">
                                 <rect key="frame" x="54" y="135" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9q0-fH-1tD">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="9q0-fH-1tD">
                                 <rect key="frame" x="153" y="135" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wF9-3F-6ZL">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="wF9-3F-6ZL">
                                 <rect key="frame" x="252" y="135" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JGg-St-qsM">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="JGg-St-qsM">
                                 <rect key="frame" x="54" y="219" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NiY-hR-JRm">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="NiY-hR-JRm">
                                 <rect key="frame" x="153" y="219" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jKa-8s-quq">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="jKa-8s-quq">
                                 <rect key="frame" x="252" y="219" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8LD-SR-kWM">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="8LD-SR-kWM">
                                 <rect key="frame" x="54" y="303" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l9M-Sx-Cnh">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="l9M-Sx-Cnh">
                                 <rect key="frame" x="153" y="303" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tak-ge-EjW">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="Tak-ge-EjW">
                                 <rect key="frame" x="252" y="303" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f4c-cl-U6Y">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="f4c-cl-U6Y">
                                 <rect key="frame" x="54" y="387" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="da7-xc-I1G">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="da7-xc-I1G">
                                 <rect key="frame" x="153" y="387" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i1r-kK-ZPT">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="i1r-kK-ZPT">
                                 <rect key="frame" x="252" y="387" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZHN-4h-egN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="ZHN-4h-egN">
                                 <rect key="frame" x="54" y="471" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5gB-T4-ec0">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="5gB-T4-ec0">
                                 <rect key="frame" x="153" y="471" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="p9k-uc-XzY">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="p9k-uc-XzY">
                                 <rect key="frame" x="252" y="471" width="91" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dvC-Rv-IfX">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Documentos Swift" id="ODK-tn-uz8"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="HKu-cE-Zke"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kcg-uI-0T7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -930,21 +874,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Wq-3R-UfW">
-                                <rect key="frame" x="67" y="96" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo-1103594_960_720" translatesAutoresizingMaskIntoConstraints="NO" id="9Wq-3R-UfW">
+                                <rect key="frame" x="67" y="137" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g2y-m8-f3l">
-                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo-1103594_960_720" translatesAutoresizingMaskIntoConstraints="NO" id="g2y-m8-f3l">
+                                <rect key="frame" x="67" y="310" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tD4-kN-flz">
-                                <rect key="frame" x="67" y="443" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo-1103594_960_720" translatesAutoresizingMaskIntoConstraints="NO" id="tD4-kN-flz">
+                                <rect key="frame" x="67" y="484" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QXs-IX-lkO">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Fotos Swift" id="IeX-ND-RNA"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="9Nl-Qb-dKH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="em2-dR-F4s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -986,7 +938,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CwX-LB-lZR">
                                         <rect key="frame" x="0.0" y="0.0" width="91" height="380"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bb6-zO-aff">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="bb6-zO-aff">
                                                 <rect key="frame" x="0.0" y="0.0" width="91" height="76"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WsA-zm-Ch3">
@@ -1006,7 +958,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yyz-h5-EJA">
                                         <rect key="frame" x="91" y="0.0" width="91" height="380"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kaf-QJ-PEh">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="Kaf-QJ-PEh">
                                                 <rect key="frame" x="0.0" y="0.0" width="91" height="76"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sgT-rq-vgW">
@@ -1026,7 +978,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vde-ht-UUR">
                                         <rect key="frame" x="182" y="0.0" width="91" height="380"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T9G-Cd-2Ze">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="79670220-a90e-4b11-bad3-351d069bfd60" translatesAutoresizingMaskIntoConstraints="NO" id="T9G-Cd-2Ze">
                                                 <rect key="frame" x="0.0" y="0.0" width="91" height="76"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0P7-is-Zma">
@@ -1045,6 +997,13 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HXP-t4-qoN">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Documentos Artes" id="7Ol-rW-rzU"/>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1058,11 +1017,215 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zYs-fk-GvG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5140" y="-167.76611694152925"/>
+            <point key="canvasLocation" x="4329" y="448"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="FeP-sG-kUC">
+            <objects>
+                <viewController id="kR3-Ak-rFi" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kGF-zH-Of5"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q7S-El-oG3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yTr-mv-KLm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="CvH-F0-p74">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vja-65-acJ">
+                                        <rect key="frame" x="0.0" y="308.5" width="121" height="30"/>
+                                        <color key="backgroundColor" red="0.37640172240000003" green="0.37634837630000001" blue="0.38458287720000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Fotos">
+                                            <color key="titleColor" red="0.99607473609999997" green="0.9922029376" blue="0.99199241400000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.99607473609999997" green="0.9922029376" blue="0.99199241400000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJJ-iX-olz">
+                                        <rect key="frame" x="127" y="308.5" width="121" height="30"/>
+                                        <color key="backgroundColor" red="0.37640172240000003" green="0.37634837630000001" blue="0.38458287720000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Videos">
+                                            <color key="titleColor" red="0.99607473609999997" green="0.9922029376" blue="0.99199241400000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4DQ-Jc-b5Y">
+                                        <rect key="frame" x="254" y="308.5" width="121" height="30"/>
+                                        <color key="backgroundColor" red="0.37640172240000003" green="0.37634837630000001" blue="0.38458287720000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Documentos">
+                                            <color key="titleColor" red="0.99607473609999997" green="0.9922029376" blue="0.99199241400000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xdv-K8-tAG">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Artes" id="xbX-6Y-Tts"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CvH-F0-p74" firstAttribute="leading" secondItem="yTr-mv-KLm" secondAttribute="leading" id="NKi-3w-RZS"/>
+                            <constraint firstItem="Q7S-El-oG3" firstAttribute="top" secondItem="CvH-F0-p74" secondAttribute="bottom" id="dfm-DZ-0C9"/>
+                            <constraint firstItem="CvH-F0-p74" firstAttribute="top" secondItem="kGF-zH-Of5" secondAttribute="bottom" id="iAF-VP-za4"/>
+                            <constraint firstAttribute="trailing" secondItem="CvH-F0-p74" secondAttribute="trailing" id="xGN-jX-Xow"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="or0-zP-Tdy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3F1-wn-ttI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2761" y="278"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wyy-Hj-PBm">
+            <objects>
+                <viewController id="E79-MI-mnG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TFH-sn-G57"/>
+                        <viewControllerLayoutGuide type="bottom" id="0hV-Uo-P0V"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aVz-QP-off">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="fCb-MS-9wN">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92k-dy-JUD">
+                                        <rect key="frame" x="0.0" y="286.5" width="121" height="30"/>
+                                        <color key="backgroundColor" red="0.37640172240000003" green="0.37634837630000001" blue="0.38458287720000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Fotos">
+                                            <color key="titleColor" red="0.99607473609999997" green="0.9922029376" blue="0.99199241400000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.99607473609999997" green="0.9922029376" blue="0.99199241400000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="LbB-fR-sId" kind="show" id="0lE-C3-ESo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdj-JU-IYM">
+                                        <rect key="frame" x="127" y="286.5" width="121" height="30"/>
+                                        <color key="backgroundColor" red="0.37640172240000003" green="0.37634837630000001" blue="0.38458287720000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Videos">
+                                            <color key="titleColor" red="0.99607473609999997" green="0.9922029376" blue="0.99199241400000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="fIz-8k-tpF" kind="show" id="7Ce-ls-xfX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nWE-2O-hHG">
+                                        <rect key="frame" x="254" y="286.5" width="121" height="30"/>
+                                        <color key="backgroundColor" red="0.37640172240000003" green="0.37634837630000001" blue="0.38458287720000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Documentos">
+                                            <color key="titleColor" red="0.99607473609999997" green="0.9922029376" blue="0.99199241400000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="ueu-Vc-kbR" kind="show" id="pwU-TT-ioy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DRc-I0-6fB">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Física" id="y70-RF-hyl"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="fCb-MS-9wN" secondAttribute="trailing" id="Ly9-4Z-0oZ"/>
+                            <constraint firstItem="fCb-MS-9wN" firstAttribute="top" secondItem="TFH-sn-G57" secondAttribute="bottom" id="TV5-k9-JTa"/>
+                            <constraint firstItem="0hV-Uo-P0V" firstAttribute="top" secondItem="fCb-MS-9wN" secondAttribute="bottom" id="UJo-qd-abD"/>
+                            <constraint firstItem="fCb-MS-9wN" firstAttribute="leading" secondItem="aVz-QP-off" secondAttribute="leading" id="Zqm-wK-6xH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MP9-QA-Pv5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gXM-qw-vIc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3047" y="2237"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8md-kh-r18">
+            <objects>
+                <viewController id="MNn-Kv-Y2X" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EJA-vj-oFd"/>
+                        <viewControllerLayoutGuide type="bottom" id="z2a-kg-xLh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="63H-gp-wDr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="v6q-Rf-dXx">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kti-fp-qjB">
+                                        <rect key="frame" x="0.0" y="286.5" width="121" height="30"/>
+                                        <color key="backgroundColor" red="0.37640172240000003" green="0.37634837630000001" blue="0.38458287720000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Fotos">
+                                            <color key="titleColor" red="0.99607473609999997" green="0.9922029376" blue="0.99199241400000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.99607473609999997" green="0.9922029376" blue="0.99199241400000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="j1x-qb-qJb" kind="show" id="9gA-su-935"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HjM-hX-PZM">
+                                        <rect key="frame" x="127" y="286.5" width="121" height="30"/>
+                                        <color key="backgroundColor" red="0.37640172240000003" green="0.37634837630000001" blue="0.38458287720000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Videos">
+                                            <color key="titleColor" red="0.99607473609999997" green="0.9922029376" blue="0.99199241400000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="07u-Jt-hDd" kind="show" id="25h-O4-oRV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MTd-xh-0vQ">
+                                        <rect key="frame" x="254" y="286.5" width="121" height="30"/>
+                                        <color key="backgroundColor" red="0.37640172240000003" green="0.37634837630000001" blue="0.38458287720000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Documentos">
+                                            <color key="titleColor" red="0.99607473609999997" green="0.9922029376" blue="0.99199241400000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="m4I-Uq-DuY" kind="show" id="5Md-w3-EiT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yI7-ew-lae">
+                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Cálculo" id="fEC-mW-tec"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="z2a-kg-xLh" firstAttribute="top" secondItem="v6q-Rf-dXx" secondAttribute="bottom" id="5ts-ez-v3W"/>
+                            <constraint firstAttribute="trailing" secondItem="v6q-Rf-dXx" secondAttribute="trailing" id="NQy-dF-8Nu"/>
+                            <constraint firstItem="v6q-Rf-dXx" firstAttribute="leading" secondItem="63H-gp-wDr" secondAttribute="leading" id="RVn-8d-ohs"/>
+                            <constraint firstItem="v6q-Rf-dXx" firstAttribute="top" secondItem="EJA-vj-oFd" secondAttribute="bottom" id="SAg-3V-PcB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="csE-Gs-rkE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mfA-XA-BUT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1150" y="2237"/>
         </scene>
     </scenes>
     <resources>
+        <image name="79670220-a90e-4b11-bad3-351d069bfd60" width="256" height="256"/>
         <image name="Free-Printable-June-2019-Calendar" width="1303" height="1079"/>
         <image name="WhatsApp Image 2019-07-04 at 20.24.09" width="1280" height="469"/>
+        <image name="iconevideo1" width="512" height="512"/>
+        <image name="photo-1103594_960_720" width="720" height="720"/>
     </resources>
 </document>
